@@ -1,14 +1,20 @@
 {
-  "name": "cookbook-generator",
+  "name": "@wolox/cookbook-import",
   "version": "1.0.0",
   "description": "",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cookbook-import": "cookbook-import"
   },
-  "author": "",
-  "license": "ISC",
+  "bin": {
+    "cookbook-import": "./script.js"
+  },
+  "author": "Damián Finkelstein",
+  "license": "MIT",
   "dependencies": {
-    "node-fetch": "^2.6.1"
+    "chalk": "^4.1.0",
+    "minimist": "^1.2.5",
+    "node-fetch": "^2.6.1",
+    "yargs": "^16.2.0"
   }
 }
