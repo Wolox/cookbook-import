@@ -14,9 +14,8 @@ const {
 
 const argv = require('minimist')(process.argv.slice(2));
 
-const outputFolder = argv.output || argv.o || 'src';
+const outputFolder = argv.output || argv.o || 'recipe';
 
-// TODO: validate existance of parameters
 const tech = argv.tech || argv.t;
 const recipeCategory = argv.category || argv.c;
 const recipeName = argv.name || argv.n;
